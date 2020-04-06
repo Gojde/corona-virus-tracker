@@ -1,0 +1,49 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(min-content, 1410px) minmax(100px, 1fr);
+}
+
+.content{
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mainImage{
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.left{
+    grid-column: 1;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    #casses{
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+    #viewCountry{
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+
+    #deaths{
+        grid-row: 2 / 3;
+    }
+
+    #recovered{
+        grid-row: 3 / 4;
+    }
+}
+
+.right{
+    grid-column: 2;
+    grid-row: 1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
