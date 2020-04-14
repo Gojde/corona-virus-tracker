@@ -1,4 +1,5 @@
 import { CountUp } from 'countup.js'
+import canvas from './js/canvas'
 
 async function getData(){
     try{
