@@ -7,12 +7,12 @@
     "watch:sass": "parcel watch ./src/main.scss --out-dir ./css --out-file main.css",
     "watch:js": "parcel watch ./src/index.js --out-dir ./js --out-file bundle.js",
     "build:sass": "parcel build ./src/main.scss --out-dir ./css --out-file main.css",
-    "build:js": "parcel build ./src/index.js --out-dir ./js --out-file bundle.js"
+    "build:js": "parcel build ./src/index.js --out-dir ./js --out-file bundle.js",
+    "autoprefixer": "postcss ./css/main.css --use autoprefixer -d build/"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^9.7.5",
     "countup.js": "^2.0.4",
     "parcel-bundler": "^1.12.4",
     "postcss-modules": "^1.5.0",
@@ -20,5 +20,9 @@
   },
   "browserslist": [
     "last 1 Chrome versions"
-  ]
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-cli": "^7.1.0"
+  }
 }
