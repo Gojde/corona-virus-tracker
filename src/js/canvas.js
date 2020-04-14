@@ -6,23 +6,23 @@ window.addEventListener('load', () => {
     canvas.height = content.clientHeight;
     canvas.width = content.clientWidth;
 
-    ctx.beginPath();
-    ctx.moveTo(1, 0);
-    ctx.lineTo(1, 193);
-    ctx.lineTo(21, 193);
-    ctx.lineWidth = 2;
-    ctx.stroke();
+    // ctx.beginPath();
+    // ctx.moveTo(1, 0);
+    // ctx.lineTo(1, 193);
+    // ctx.lineTo(21, 193);
+    // ctx.lineWidth = 2;
+    // ctx.stroke();
 
-    ctx.moveTo(1, 365);
-    ctx.lineTo(21, 365);
-    ctx.lineWidth = 2;
-    ctx.stroke();
+    // ctx.moveTo(1, 365);
+    // ctx.lineTo(21, 365);
+    // ctx.lineWidth = 2;
+    // ctx.stroke();
 
-    ctx.moveTo(1, content.clientHeight);
-    ctx.lineTo(1, 550);
-    ctx.lineTo(21, 550);
-    ctx.lineWidth = 2;
-    ctx.stroke();
+    // ctx.moveTo(1, content.clientHeight);
+    // ctx.lineTo(1, 550);
+    // ctx.lineTo(21, 550);
+    // ctx.lineWidth = 2;
+    // ctx.stroke();
 
     ctx.beginPath();
     ctx.filter = 'blur(20px)';
