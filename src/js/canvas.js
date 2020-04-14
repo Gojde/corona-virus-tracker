@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 
     ctx.beginPath();
     ctx.filter = 'blur(20px)';
-    ctx.arc(520, 150, 20, 0, 2 * Math.PI);
+    ctx.arc(520, 50, 20, 0, 2 * Math.PI);
     ctx.fillStyle = "orange";
     ctx.fill();
 

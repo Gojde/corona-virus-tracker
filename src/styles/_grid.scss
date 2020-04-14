@@ -10,8 +10,8 @@
         grid-template-columns: minmax(40px, 1fr) minmax(min-content, 1410px) minmax(40px, 1fr);
     }
 
-    @media only screen and (max-width:1200px ){
-        grid-template-columns: 1fr minmax(min-content, 1410px) 1fr
+    @media only screen and (max-width:1100px ){
+        grid-template-columns: minmax(40px, 1fr) minmax(min-content, 1410px);
     }
 }
 
@@ -20,6 +20,10 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    @media only screen and (max-width:780px ){
+        grid-template-columns: 1fr .5fr
+    }
 }
 
 #canvas{
@@ -63,4 +67,9 @@
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+
+    @media only screen and (max-width: 1100px){
+        grid-column: 1 / -1;
+        display: flex; 
+    }
 }
